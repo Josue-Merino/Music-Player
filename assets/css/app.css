@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --Pink: #C93B76;
+    --Black:#212936;
+    --White: #E5E7EB;
+    --Grey: #4D5562;
+    --DarkBlue: #121826a6;
+
+    --Font: 'Inter', system-ui;
+
+}
+
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--Font);
+    font-size: 1.6rem;
+    background-image: url(/assets/img/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.cardPlayer {
+    background-color: var(--DarkBlue);
+    margin: 0 auto;
+    margin: 16rem 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+@media (min-width: 412px){ 
+    .cardPlayer {
+        margin: 0 auto;
+        max-width: 40rem;
+        margin-top: 9rem;
+        margin-bottom: 10rem;
+    }
+}
+.image  {
+    width: 100%;
+    height: 30rem;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+}
+
+.cardPlayer__tittle{
+    font-size: 1.6rem;
+    color: var(--White);
+    margin: 0;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cardPlayer__author {
+    font-size: 1.2rem;
+    color: var(--Grey);
+    text-align: center;
+    margin: 0;
+    margin-top: .5rem;
+    font-weight: 500;
+}
+
+.progressBar__flex{
+    margin: 2rem;
+    display: flex;
+    flex-direction:column;
+}
+
+.progressBar__secondFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.progressBar__time {
+    font-size: 1rem;
+    color: var(--Grey);
+}
+
+.cardPlayer__progressBar{
+    width: 100%;
+    height: 1rem;
+}
+  
+.btn__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+    height: auto;
+}
+
+.play {
+    background-color: var(--Pink);
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <title>Music Player</title>
+</head>
+<body>
+
+    <main class="cardPlayer">
+        <div class="image__container">
+            <img src="/assets/img/cover-1.png" alt="cover-1" class="image" id="coverSong">
+        </div>
+        <p class="cardPlayer__tittle" id="tittleSong">Lost in the City Lights</p>
+        <p class="cardPlayer__author" id="authorSong">Cosmo Sheldrake</p>
+
+        <div class="progressBar__flex">
+            <div class="progressBar__secondFlex">
+                <span class="progressBar__time" id="currentTimeSpan">00:00</span>
+                <span class="progressBar__time" id="durationSong">00:00</span>
+            </div>
+            <div class="progressBar__container">
+                <audio src="/assets/audio/lost-in-city-lights-145038.mp3" id="song"></audio>
+                <input type="range" class="cardPlayer__progressBar" id="progressBar" min="0" max="100" value="0" step="0.1"></progress>
+            </div>
+        </div>
+        
+        <div class="btn__container">
+            <button class="btn" id="backward"><img src="/assets/img/icons/Stop_and_play_fill-1.svg" alt=""></button>
+            <button class="play" id="playPause"><img src="/assets/img/icons/Play_fill.svg" alt="" id="icon"></button>
+            <button class="btn" id="forward"><img src="/assets/img/icons/Stop_and_play_fill.svg" alt=""></button>
+        </div>
+        
+
+    </main>
+    <script type="module" src="assets/js/app.js"></script>
+    
+</body>
+</html>
